@@ -6,7 +6,7 @@ type PropsType = {
     onClick?: () => void;
 };
 
-const Button = ({ children, onClick }: PropsType) => {
+const Primarybtn = ({ children, onClick }: PropsType) => {
     const buttonStyle: React.CSSProperties = {
         padding: '10px 20px',
         fontSize: '16px',
@@ -15,15 +15,17 @@ const Button = ({ children, onClick }: PropsType) => {
         border: 'none',
         borderRadius: '5px',
         cursor: 'pointer',
-        transition: 'background-color 0.3s ease',
+        transition: 'background-color 0.3s ease, transform 0.2s ease', // Added transform transition
     };
 
     const handleMouseOver = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.currentTarget.style.backgroundColor = '#0056b3';
+        e.currentTarget.style.transform = 'translateY(-2px)'; // Move button slightly upward on hover
     };
 
     const handleMouseOut = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.currentTarget.style.backgroundColor = '#007BFF';
+        e.currentTarget.style.transform = 'translateY(0)'; // Reset transformation on mouse out
     };
 
     return (
@@ -38,4 +40,4 @@ const Button = ({ children, onClick }: PropsType) => {
     );
 };
 
-export {Button};
+export { Primarybtn };
