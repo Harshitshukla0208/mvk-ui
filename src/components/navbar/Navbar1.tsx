@@ -9,7 +9,7 @@ type NavbarProps = {
     textColor?: string;
 };
 
-const Navbar1 = ({ brand = "Brand", links, backgroundColor = "#333", textColor = "#fff" }: NavbarProps) => {
+const Navbar1 = ({ brand = "MVK-UI", links, backgroundColor = "transparent", textColor = "black" }: NavbarProps) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
