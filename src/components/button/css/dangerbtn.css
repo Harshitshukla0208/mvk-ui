@@ -1,0 +1,25 @@
+.danger-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.danger-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.danger-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5); /* Custom focus outline */
+}
+
+.danger-btn:active {
+    background-color: #a71d2a;
+    transform: translateY(0);
+}

@@ -1,0 +1,12 @@
+.styled-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent; /* Change background color to transparent */
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex; /* Make button a flex container */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+}

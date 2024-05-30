@@ -1,0 +1,25 @@
+.success-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745; /* Light shade of green */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+
+.success-btn:hover {
+    background-color: #218838; /* Slightly darker shade on hover */
+    transform: translateY(-2px);
+}
+
+.success-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Custom focus outline */
+}
+
+.success-btn:active {
+    background-color: #1e7e34; /* Even darker shade on click */
+    transform: translateY(0);
+}

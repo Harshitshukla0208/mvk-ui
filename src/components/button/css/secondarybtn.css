@@ -1,0 +1,32 @@
+/* Common color for secondary buttons */
+:root {
+    --secondary-btn-color: #6c757d; /* Grey color */
+}
+
+.secondary-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--secondary-btn-color); /* Common color for secondary buttons */
+    color: #FFFFFF; /* Text color */
+    border: 2px solid var(--secondary-btn-color); /* Border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.2s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #242424; /* Darker background color on hover */
+    color: #FFFFFF; /* Text color on hover */
+    border-color: #242424; /* Border color on hover */
+    transform: translateY(-2px);
+}
+
+.secondary-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(36, 36, 36, 0.5); /* Custom focus outline */
+}
+
+.secondary-btn:active {
+    background-color: #1a1a1a; /* Darker background color on click */
+    transform: translateY(0);
+}
