@@ -5,6 +5,8 @@ export * from "./components/button/Successbtn"
 export * from "./components/button/Iconbtn"
 
 export * from "./components/navbar/Navbar1"
+export * from "./components/footer/FooterDark"
+export * from "./components/footer/FooterLight"
 
 export * from "./components/card/Card1"
 export * from "./components/card/Card2"
