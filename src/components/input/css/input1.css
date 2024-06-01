@@ -20,7 +20,7 @@
     left: 10px;
     background: white;
     padding: 0 5px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 600;
     color: #333;
 }
@@ -30,7 +30,7 @@
     border: 1px solid #ccc;
     background-color: transparent;
     border-radius: 6px;
-    font-size: 1em;
+    font-size: 0.9em;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
