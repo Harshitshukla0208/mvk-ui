@@ -11,4 +11,5 @@ export * from "./components/card/Card2"
 export * from "./components/card/Card3"
 
 export * from "./components/input/Input1"
+export * from "./components/Login/LoginForm"
 export * from "./hooks/counter"
