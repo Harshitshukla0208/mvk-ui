@@ -1,38 +1,49 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { FC, useState } from 'react'
 import './navcss/nav1.css';
 
-type NavbarProps = {
-    brand?: string;
-    links: { name: string; href: string }[];
+interface NavLink {
+    label: string;
+    url: string;
+}
+
+interface NavbarProps {
+    brand: string;
+    links: NavLink[];
     backgroundColor?: string;
     textColor?: string;
-};
+}
 
-const Navbar1 = ({ brand = "MVK-UI", links, backgroundColor = "transparent", textColor = "black" }: NavbarProps) => {
-    const [menuOpen, setMenuOpen] = useState(false);
+const Navbar1: FC<NavbarProps> = ({
+    brand,
+    links,
+    backgroundColor = '#fff',
+    textColor = '#333'
+}) => {
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+        setIsOpen(!isOpen);
     };
 
     return (
         <nav className="navbar" style={{ backgroundColor, color: textColor }}>
-            <div className="navbar-brand">{brand}</div>
-            <button className="navbar-toggle" onClick={toggleMenu}>
+        <div className="navbar-brand">{brand}</div>
+        <button className="navbar-toggle" onClick={toggleMenu} style={{color: textColor}}>
             ☰
-            </button>
-            <ul className={`navbar-links ${menuOpen ? 'active' : 'inactive'}`}>
+        </button>
+        <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
             {links.map((link, index) => (
-                <li key={index}>
-                <a href={link.href} style={{ color: textColor }}>
-                    {link.name}
+            <li key={index}>
+                <a href={link.url} style={{ color: textColor }}>
+                {link.label}
                 </a>
-                </li>
+            </li>
             ))}
-            </ul>
+        </ul>
         </nav>
     );
 };
 
-export { Navbar1 };
+export  {Navbar1};
+
