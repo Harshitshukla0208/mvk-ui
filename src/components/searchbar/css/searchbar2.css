@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-bar2 {
+    display: flex;
+    align-items: center;
+    width: var(--width, 100%);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0em;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: var(--background-color, #fff);
+    color: var(--text-color, #000);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-input2 {
+    flex-grow: 1;
+    padding: 0.75em;
+    border: none;
+    font-size: 1em;
+    background-color: transparent;
+    color: inherit;
+    transition: box-shadow 0.3s;
+}
+
+.search-input2:focus {
+    outline: none;
+    border: 1px solid rgba(0, 123, 255, 0.5);
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    color: inherit;
+    transition: transform 0.2s;
+}
+
+.search-button2:hover {
+    transform: scale(1.1);
+}
+
+.search-button2:active {
+    transform: scale(0.9);
+}
+
+.material-symbols-outlined {
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .search-bar2 {
+        width: 100%;
+        padding: 0.25em;
+    }
+
+    .search-input2 {
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.2em;
+    }
+}
