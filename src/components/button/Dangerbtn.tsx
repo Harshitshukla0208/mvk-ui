@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import './css/dangerbtn.css';
+import '../styles/dangerbtn.css';
 
 type PropsType = {
     children: ReactNode;

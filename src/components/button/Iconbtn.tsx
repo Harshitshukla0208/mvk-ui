@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './css/iconbtn.css';
+import '../styles/iconbtn.css';
 
 type PropsType = {
     onClick?: () => void;

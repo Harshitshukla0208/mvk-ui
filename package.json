@@ -1,6 +1,6 @@
 {
   "name": "mvk-ui",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.24.7",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -25,6 +26,7 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "rollup-plugin-postcss": "^4.0.2"
   }

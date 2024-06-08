@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FC, useState } from 'react';
-import './css/filepicker.css';
+import '../styles/filepicker.css';
 
 interface FilePickerProps {
     onFileSelect: (files: FileList | null) => void;

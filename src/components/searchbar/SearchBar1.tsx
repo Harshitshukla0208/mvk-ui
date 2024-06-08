@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FC } from 'react';
-import './css/searchbar1.css';
+import '../styles/searchbar1.css';
 
 interface SearchBarProps {
     placeholder?: string;

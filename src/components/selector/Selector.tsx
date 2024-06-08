@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FC, useState } from 'react'
-import './css/selector.css';
+import '../styles/selector.css';
 
 interface DropdownOption {
     label: string;

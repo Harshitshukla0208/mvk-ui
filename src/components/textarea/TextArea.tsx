@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TextareaHTMLAttributes, FC } from "react"
-import './css/textarea.css';
+import '../styles/textarea.css';
 
 export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
     label?: string;

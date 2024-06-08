@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import './css/successbtn.css';
+import '../styles/successbtn.css';
 
 type PropsType = {
     children: ReactNode;

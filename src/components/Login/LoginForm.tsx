@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FC, FormEvent, useState } from "react"
 import { Input1 } from '../input/Input1';
-import './css/loginform.css';
+import '../styles/loginform.css';
 
 interface LoginFormProps {
     onSubmit: (email: string, password: string, username: string) => void;

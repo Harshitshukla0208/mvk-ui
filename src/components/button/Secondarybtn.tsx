@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import './css/secondarybtn.css';
+import '../styles/secondarybtn.css';
 
 type ButtonProps = {
     children: ReactNode;

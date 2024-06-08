@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FC, useState } from 'react'
-import './navcss/nav1.css';
+import '../styles/nav1.css';
 
 interface NavLink {
     label: string;

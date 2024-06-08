@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FC } from 'react';
-import './css/avatar.css';
+import '../styles/avatar.css';
 
 interface AvatarProps {
     src?: string;

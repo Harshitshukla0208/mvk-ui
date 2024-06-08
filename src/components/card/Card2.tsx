@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import './css/card1.css';
+import '../styles/card1.css';
 
 interface CardProps {
     image?: string;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FC } from 'react'
-import './css/footerdark.css';
+import '../styles/footerdark.css';
 
 interface FooterProps {
     text: string;
